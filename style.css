@@ -104,7 +104,7 @@ footer {
 
 @media (max-width: 468px) {
   .primg1,
-  primg2,
+  .primg2,
   .primg3 {
     background-attachment: scroll;
   }
