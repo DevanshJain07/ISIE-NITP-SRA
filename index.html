@@ -6,14 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ISIE NITP SRA</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animateCSS/1.2.2/jquery.animatecss.min.js"></script> -->
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </head>
 
 <body>
-    <section class="image1">        
-            <nav class="navbar navbar-default">
+    <section>        
+            <!-- <nav class="navbar navbar-default">
                 <div class="container">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
@@ -38,10 +47,116 @@
                         </ul>
                     </div>
                 </div>
-            </nav>
-            <div class="prtext">
-                <span class="border">ISIE NIT SRA</span>
+            </nav> -->
+            <div class="container-fluid p-0">
+                <nav class="navbar navbar-dark bg-dark">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="index.html" style="color: whitesmoke;">ISIE LOGO</a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                
+                      <div class="collapse navbar-collapse" id="navbarsExample01">
+                        <ul class="navbar-nav me-auto mb-2">
+                          <li class="nav-item active">
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#achievements">Achievements</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="pastevents.html">PastEvents</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="team.html">Our Team</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+
+                <div id="carouselExampleIndicators" class="carousel slide hero-slides" data-bs-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+                      <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <!-- <nav class="navbar navbar-dark bg-dark">
+                            <div class="container-fluid">
+                              <a class="navbar-brand" href="#">Never expand</a>
+                              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01">
+                                <span class="navbar-toggler-icon"></span>
+                              </button>
+                        
+                              <div class="collapse navbar-collapse" id="navbarsExample01">
+                                <ul class="navbar-nav me-auto mb-2">
+                                  <li class="nav-item active">
+                                    <a class="nav-link" aria-current="page" href="#">Home</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#">Link</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                                  </li>
+                                  <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                                      <li><a class="dropdown-item" href="#">Action</a></li>
+                                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                  </li>
+                                </ul>
+                                <form>
+                                  <input class="form-control" type="text" placeholder="secondimagecarouselrch" aria-label="secondimagecarouselrch">
+                                </form>
+                              </div>
+                            </div>
+                          </nav> -->
+                    
+                      <div class="carousel-item active firstimagecarousel">
+                        <div class="container h-100 d-md-block">
+                          <div class="row h-100">
+                            <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                              <div class="importantmsg animated fadeIn">
+                                <h2 class="animated fadeInLeft">Important Event</h2>
+                                <p class="animated fadeInRight">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ad repellendus nesciunt hic aliquid, ducimus eius. Tenetur fugiat quibusdam hic, et pariatur molestiae facilis consectetur quae nihil! Tempore, asperiores accusamus?</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+        
+                      <div class="carousel-item secondimagecarousel">
+                        <div class="container h-100 d-md-block">
+                          <div class="row h-100">
+                            <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                              <div class="importantmsg animated fadeIn">
+                                <h2 class="animated fadeInLeft">Important Event</h2>
+                                <p class="animated fadeInRight">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ad repellendus nesciunt hic aliquid, ducimus eius. Tenetur fugiat quibusdam hic, et pariatur molestiae facilis consectetur quae nihil! Tempore, asperiores accusamus?</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </a>
+                  </div>
             </div>
+            <!-- <div class="prtext">
+                <span class="border">ISIE NIT SRA</span>
+            </div> -->
         </section>
     
 
@@ -103,6 +218,12 @@
     </section>
 
     <section class="image4">
+        <div class="prtextimage">
+            <h2 style="color: black;">First Car</h2>
+            <p class="text" style="color: black;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+           </p>
+        </div>
     </section>
     
     <section class="partners">
@@ -128,11 +249,5 @@
             <li><a href="#"><img src="images/linkedin.png"></a></li>
         </ul>
     </section>
-    
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-        crossorigin="anonymous"></script>
-    <script src="script.js"></script>
 </body>
-
 </html>
