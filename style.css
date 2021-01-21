@@ -61,8 +61,8 @@ html {
   transition: transform 2s ease;
 }
 #carouselExampleIndicators .carousel-item .importantmsg{
-  background: rgba(0,0,0,0.5);
-  padding: 40px;
+  background: rgba(255, 238, 5, 0.4);
+  padding: 25px;
   color: white;
   animation-duration: 1s;
   animation-delay: 2s;
@@ -71,6 +71,11 @@ html {
 .row.h-100{
   align-items: center;
 }
+
+/* #carouselExampleIndicators .carousel-item .row .col-12{
+  
+} */
+
 
 .image1,
 .image2,
