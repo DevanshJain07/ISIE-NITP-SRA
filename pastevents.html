@@ -22,8 +22,8 @@
                 <p class="dateOfEvent"> 21 Jan -2 Feb </p>
                 <h2> CORONA & MELANGE </h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A rerum corrupti aliquam vel, dolor hic, assumenda, molestias cupiditate eligendi natus minima exercitationem in possimus nesciunt repellat rem? Neque, recusandae inventore!</p>
-                <!-- <p class="appearslater" style="visibility: hidden; display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. A rerum corrupti aliquam vel, dolor hic, assumenda, molestias cupiditate eligendi natus minima exercitationem in possimus nesciunt repellat rem? Neque, recusandae inventore!</p> -->
-                <div class="button"><a href="#"> Real Full Article </a></div>
+                <p id="appearslater1" style="visibility: hidden; display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. A rerum corrupti aliquam vel, dolor hic, assumenda, molestias cupiditate eligendi natus minima exercitationem in possimus nesciunt repellat rem? Neque, recusandae inventore!</p>
+                <div class="button" onclick="openclose1()"><a href="#appearslater1"> Real Full Article </a></div>
             </div>
         </div>
 
@@ -35,13 +35,37 @@
                 <p class="dateOfEvent"> 21 Jan -2 Feb </p>
                 <h2> CORONA & MELANGE </h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A rerum corrupti aliquam vel, dolor hic, assumenda, molestias cupiditate eligendi natus minima exercitationem in possimus nesciunt repellat rem? Neque, recusandae inventore!</p>
-                <p class="appearslater" style="visibility: hidden; display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. A rerum corrupti aliquam vel, dolor hic, assumenda, molestias cupiditate eligendi natus minima exercitationem in possimus nesciunt repellat rem? Neque, recusandae inventore!</p>
-                <div class="button" onclick="openclose()"><a href="#"> Real Full Article </a></div>
+                <p id="appearslater2" style="visibility: hidden; display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. A rerum corrupti aliquam vel, dolor hic, assumenda, molestias cupiditate eligendi natus minima exercitationem in possimus nesciunt repellat rem? Neque, recusandae inventore!</p>
+                <div class="button" onclick="openclose2()"><a href="#appearslater2"> Real Full Article </a></div>
             </div>
         </div>
     </section>
     <script>
-
+        var a,b;
+        function openclose1(){
+            if(a==1){
+                document.getElementById("appearslater1").style.visibility="invisible";
+                document.getElementById("appearslater1").style.display="none";
+                return a=0;
+            }
+            else{
+                document.getElementById("appearslater1").style.visibility="visible";
+                document.getElementById("appearslater1").style.display="block";
+                return a=1;
+            }
+        }
+        function openclose2(){
+            if(b==1){
+                document.getElementById("appearslater2").style.visibility="invisible";
+                document.getElementById("appearslater2").style.display="none";
+                return b=0;
+            }
+            else{
+                document.getElementById("appearslater2").style.visibility="visible";
+                document.getElementById("appearslater2").style.display="block";
+                return b=1;
+            }
+        }
     </script>
 </body>
 </html>
