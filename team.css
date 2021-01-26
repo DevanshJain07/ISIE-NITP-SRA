@@ -1,9 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-*
-{
-    font-family: 'Poppins',sans-serif;
-    margin: 0;
-    padding: 0;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 /* body{
     display: flex;
@@ -21,147 +20,158 @@ html {
   line-height: 1.7;
   min-height: 100vh;
   color: rgb(240, 234, 234);
+  /* background: linear-gradient(to right, #000033, #1a1a1a); */
 }
-.teamcards{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 40px 0;
+.teamcards {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 40px 0;
 }
-.teamcards .card{
-    position: relative;
-    width: 300px;
-    height: 400px;
-    margin: 20px;
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    border-radius: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.teamcards .card {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: 20px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.teamcards .card .imgBx img{
-    position: relative;
-    width: 300px;
-    height: 400px;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
+.teamcards .card .imgBx img {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
 }
 
-.teamcards .card .content{
-    position: absolute;
-    bottom: -160px;
-    width: 100%;
-    height: 160px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 10;
-    flex-direction: column;
-    backdrop-filter: blur(15px);
-    box-shadow: 0 -10px 10px rgba(0,0,0,0.1);
-    border: 1px solid rgba(255,255,255,0.2);
-    transition: bottom 0.5s;
-    /* transition-delay: 0.8s; */
+.teamcards .card .content {
+  position: absolute;
+  bottom: -160px;
+  width: 100%;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  flex-direction: column;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: bottom 0.5s;
+  /* transition-delay: 0.8s; */
 }
-.teamcards .card:hover .content{
-    bottom: 0px;
+.teamcards .card:hover .content {
+  bottom: 0px;
 }
-.teamcards .card .content .contentBx h3{
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: 500;
-    font-size: 18px;
+.teamcards .card .content .contentBx h3 {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  margin: 20px 0 15px;
+  line-height: 1.1em;
+  transition: 0.5s;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition-delay: 0.6s;
+}
+.teamcards .card:hover .content .contentBx h3 {
+  opacity: 1;
+  transform: translateY(0px);
+}
+.teamcards .card .content .contentBx h3 span {
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: initial;
+}
+.teamcards .card .content .sci {
+  position: relative;
+  bottom: 10px;
+  padding-left: 0;
+  display: flex;
+}
+.teamcards .card .content .sci li {
+  list-style: none;
+  margin: 0 auto;
+  transform: translateY(40px);
+  transition: 0.5s;
+  opacity: 0;
+  transition-delay: cal(0.2s * var(--i));
+}
+.teamcards .card:hover .content .sci li {
+  transform: translateY(0px);
+  opacity: 1;
+}
+.teamcards .card .content .sci li a {
+  color: #fff;
+  font-size: 24px;
+}
+
+.text {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+#PI {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.heading {
+  text-align: center;
+  color: grey;
+}
+
+/* FOOTER */
+
+.footer {
+  position: relative;
+  background: #0d0d0e;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer ul {
+  display: flex;
+  justify-content: center;
+}
+.footer ul li {
+  list-style: none;
+}
+.footer ul li a {
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 10px;
+}
+.footer ul li a img {
+  filter: invert(1);
+  max-width: 20px;
+}
+.text {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+@media (max-width: 991px) {
+  .footer {
+    padding: 20px 50px;
+    flex-direction: column-reverse;
     text-align: center;
-    margin: 20px 0 15px;
-    line-height: 1.1em;
-    transition: 0.5s;
-    opacity: 0;
-    transform: translateY(-20px);
-    transition-delay: 0.6s;
+  }
+  .footer ul {
+    margin-bottom: 20px;
+  }
 }
-.teamcards .card:hover .content .contentBx h3{
-    opacity: 1;
-    transform: translateY(0px);
-}
-.teamcards .card .content .contentBx h3 span{
-    font-size: 12px;
-    font-weight: 300;
-    text-transform: initial;
-}
-.teamcards .card .content .sci{
-    position: relative;
-    bottom: 10px;
-    display: flex;
-}
-.teamcards .card .content .sci li{
-    list-style: none;
-    margin: 0 10px;
-    transform: translateY(40px);
-    transition: 0.5s;
-    opacity: 0;
-    transition-delay: cal(0.2s*var(--i));
-}
-.teamcards .card:hover .content .sci li{
-    transform: translateY(0px);
-    opacity: 1;
-}
-.teamcards .card .content .sci li a{
-    color: #fff;
-    font-size: 24px;
-}
-
-.text{
-    color: #fff;
-    font-size: 18px;
-    font-weight: 300;
-    letter-spacing: 1px;
-  }
-  
-  /* FOOTER */
-  
-  .footer{
-    position: relative;
-    background: #0d0d0e;
-    padding: 20px 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .footer ul{
-    display: flex;
-    justify-content: center;
-  }
-  .footer ul li{
-    list-style: none;
-  }
-  .footer ul li a{
-    text-decoration: none;
-    display: inline-block;
-    margin: 0 10px;
-  }
-  .footer ul li a img{
-    filter: invert(1);
-    max-width: 20px;
-  }
-  .text{
-    color: #fff;
-    font-size: 18px;
-    font-weight: 300;
-    letter-spacing: 1px;
-  }
-  @media(max-width:991px){
-    .footer{
-      padding: 20px 50px;
-      flex-direction: column-reverse;
-      text-align: center;
-  }
-  .footer ul{
-      margin-bottom: 20px;
-  }
-  }
-  
