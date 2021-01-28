@@ -85,9 +85,10 @@ html {
 .image1,
 .image2,
 .image3,
-.image4 {
+.image4,
+.image5 {
   position: relative;
-  opacity: 0.8;
+  opacity: 0.9;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -100,17 +101,23 @@ html {
 }
 
 .image2 {
-  background-image: url(images/car2.jpg);
+  background-image: url("images/first car.jpeg");
   min-height: 100%;
 }
 
 .image3 {
-  background-image: url(images/car3.jpg);
+  background-image: url("images/inauguration.jpg");
   min-height: 100%;
 }
 .image4 {
-  background-image: url(images/car4.jpg);
+  background-image: url("images/animate.gif");
   min-height: 100%;
+}
+.image5 {
+  background-image: url("images/innovation.jpeg");
+  min-height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .section {
@@ -173,9 +180,9 @@ html {
   margin-top: 40px;
 }
 .partners .imgBx img {
-  max-width: 200px;
+  max-width: 300px;
   margin: 20px;
-  opacity: 0.25;
+  opacity: 1;
   cursor: pointer;
 }
 .partners .imgBx img:hover {
