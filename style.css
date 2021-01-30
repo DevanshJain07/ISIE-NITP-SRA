@@ -20,7 +20,7 @@ html {
   justify-content: center;
 }
 
-.navbar {
+/* .navbar {
   background: transparent !important;
   border: none;
   top: 0;
@@ -40,8 +40,19 @@ html {
   font-size: large;
   font-weight: 500;
   color: rgb(192, 192, 192) !important;
+} */
+.navbar .active a {
+  font-size: large;
+  font-weight: 500;
+  color: rgb(245, 245, 245) !important;
 }
-
+.navbar ul li a:hover {
+  font-weight: 600;
+  color: rgb(207, 197, 46) !important;
+}
+.navbar ul li a {
+  margin-left: 10px;
+}
 .logo {
   width: 70px;
   height: 70px;
