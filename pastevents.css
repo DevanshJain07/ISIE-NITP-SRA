@@ -1,149 +1,215 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 html {
-    font-size: 62.4%;
+  font-size: 62.4%;
 }
 body {
-    font-size: 10px;
-    font-weight: 700;
-    font-family: lato, Arial, Helvetica, sans-serif;
-    text-rendering: optimizeLegibility;
+  font-size: 10px;
+  font-weight: 700;
+  font-family: lato, Arial, Helvetica, sans-serif;
+  text-rendering: optimizeLegibility;
 }
+
+/* NAVBAR */
+.navbar .active a {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(245, 245, 245) !important;
+}
+.navbar ul li a:hover {
+  font-weight: 600;
+  color: rgb(207, 197, 46) !important;
+}
+.navbar ul li a {
+  margin-left: 10px;
+  font-size: 16px;
+}
+.navbar-custom ul {
+  margin-left: 800px;
+}
+.logo {
+  width: 70px;
+  height: 70px;
+  border: none;
+  border-radius: 50%;
+}
+
+.Events {
+  margin-top: 50px;
+}
+
 .Events .information {
-    position: relative;
-    width: 60rem;
-    margin: 10rem auto;
+  position: relative;
+  width: 60rem;
+  margin: 10rem auto;
 }
 .information .eventimage {
-    width: 60rem;
-    height: 30rem;
-    overflow: hidden;
+  width: 60rem;
+  height: 30rem;
+  overflow: hidden;
 }
 .information .eventimage img {
-    width: 100%;
-    box-shadow: 0 6px 12px rgba(85,85,85, 0.2);
-    transition: all .4s;
+  width: 100%;
+  box-shadow: 0 6px 12px rgba(85, 85, 85, 0.2);
+  transition: all 0.4s;
 }
 .information .eventimage img:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 .information h2 {
-    font-size: 2.4rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    padding-top: 2rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-top: 2rem;
 }
 .information p {
-    font-size: 1.5rem;
-    font-weight: 400;
-    letter-spacing: 1.2px;
-    /* margin: 1.2rem 0; */
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+  /* margin: 1.2rem 0; */
 }
 .information .button {
-    margin: 2.8rem 0;
-    text-align: left;
-    border-radius: 20%;
-
+  margin: 2.8rem 0;
+  text-align: left;
+  border-radius: 20%;
 }
 .information .button a:link,
 .information .button a:visited {
-    font-size: 1.2rem;
-    font-weight: 400;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #fff;
-    background: #141414;
-    padding: 1.2rem 2rem;
-    box-shadow: 0 6px 12px rgba(85,85,85, 0.3);
-    border-radius: .6rem;
-    transition: all .4s;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  background: #141414;
+  padding: 1.2rem 2rem;
+  box-shadow: 0 6px 12px rgba(85, 85, 85, 0.3);
+  border-radius: 0.6rem;
+  transition: all 0.4s;
 }
 .information .button a:hover {
-    background: #585854;
+  background: #585854;
 }
 .information .dateOfEvent {
-    position: absolute;
-    top: 25.4rem;
-    right: 1.2rem;
-    display: inline-block;
-    font-size: 1.2rem;
-    font-weight: 400;
-    text-transform: uppercase;
-    background: #0d0e0d;
-    color: #fff;
-    padding: 2rem 1.4rem;
-    border-radius: 20%;
+  position: absolute;
+  top: 25.4rem;
+  right: 1.2rem;
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  background: #0d0e0d;
+  color: #fff;
+  padding: 2rem 1.4rem;
+  border-radius: 20%;
 }
 .information .dateOfEvent:hover {
-    background: #0e3149;
-    transition: 0.6s;
+  background: #0e3149;
+  transition: 0.6s;
 }
 @media only screen and (max-width: 1280px) {
-    .Events .popup__box {
-        width: 60rem;
-    }
-    .Events .popup__box h3 {
-        font-size: 2rem;
-    }
+  .Events .popup__box {
+    width: 60rem;
+  }
+  .Events .popup__box h3 {
+    font-size: 2rem;
+  }
 }
 @media only screen and (max-width: 1080px) {
-    .information .eventimage {
-        width: 100%;
-    }
-    .information .eventimage img {
-        width: 100%;
-    }
-    .Events .information h2 {
-        font-size: 2rem;
-    }
-    .Events .information p {
-        font-size: 1.2rem;
-    }
-    .Events .popup__box {
-        width: 57rem;
-    }
-    .Events .popup__box h3 {
-        font-size: 1.8rem;
-    }
+  .information .eventimage {
+    width: 100%;
+  }
+  .information .eventimage img {
+    width: 100%;
+  }
+  .Events .information h2 {
+    font-size: 2rem;
+  }
+  .Events .information p {
+    font-size: 1.2rem;
+  }
+  .Events .popup__box {
+    width: 57rem;
+  }
+  .Events .popup__box h3 {
+    font-size: 1.8rem;
+  }
 }
 @media only screen and (max-width: 767px) {
-    .Events .information {
-        width: 80%;
-    }
-    .information .eventimage {
-        width: 100%;
-    }
-    .information .eventimage img {
-        width: 100%;
-    }
-    .Events .information .dateOfEvent {
-        top: 24.4rem;
-    }
-    .Events .popup__box {
-        width: 50rem;
-    }
+  .Events .information {
+    width: 80%;
+  }
+  .information .eventimage {
+    width: 100%;
+  }
+  .information .eventimage img {
+    width: 100%;
+  }
+  .Events .information .dateOfEvent {
+    top: 24.4rem;
+  }
+  .Events .popup__box {
+    width: 50rem;
+  }
 }
 @media only screen and (max-width: 580px) {
-    .Events .information {
-        width: 90%;
-    }
-    .Events .information img {
-        width: 96%;
-    }
-    .Events .information .dateOfEvent {
-        top: 24.4rem;
-        right: 2.2rem;
-    }
+  .Events .information {
+    width: 90%;
+  }
+  .Events .information img {
+    width: 96%;
+  }
+  .Events .information .dateOfEvent {
+    top: 24.4rem;
+    right: 2.2rem;
+  }
 }
 
+/* FOOTER */
 
-
-
-
-
-
-
+.footer {
+  position: relative;
+  background: #0d0d0e;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer ul {
+  display: flex;
+  justify-content: center;
+}
+.footer ul li {
+  list-style: none;
+}
+.footer ul li a {
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 10px;
+}
+.footer ul li a img {
+  filter: invert(1);
+  max-width: 20px;
+}
+.text {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+@media (max-width: 991px) {
+  .navbar-custom ul {
+    margin-left: 150px;
+  }
+  .footer {
+    padding: 20px 50px;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .footer ul {
+    margin-bottom: 20px;
+  }
+}

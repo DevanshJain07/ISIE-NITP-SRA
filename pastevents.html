@@ -1,71 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Past Events</title>
-    <link rel="stylesheet" href="pastevents.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-</head>
-<body>
-    <section class="Events">
-        <h1 style="text-align: center;position: relative;top: 50px; font-size:500%; font-weight: 800;">PAST EVENTS</h1>
-        <div class="container">
-            <div class="information">
-                <div class="eventimage">
-                    <img src="images/car2.jpg" alt="">
-                </div>
-                <p class="dateOfEvent"> 21 Jan -2 Feb </p>
-                <h2> CORONA & MELANGE </h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A rerum corrupti aliquam vel, dolor hic, assumenda, molestias cupiditate eligendi natus minima exercitationem in possimus nesciunt repellat rem? Neque, recusandae inventore!</p>
-                <p id="appearslater1" style="visibility: hidden; display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. A rerum corrupti aliquam vel, dolor hic, assumenda, molestias cupiditate eligendi natus minima exercitationem in possimus nesciunt repellat rem? Neque, recusandae inventore!</p>
-                <div class="button" onclick="openclose1()"><a href="#appearslater1"> Real Full Article </a></div>
-            </div>
-        </div>
+    <link rel="stylesheet" href="pastevents.css" />
+    <!-- FONT AWESOME BY PALAK -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+      integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html" style="color: whitesmoke"
+          ><img src="images/ISIE LOGO.jpg" class="logo" alt="logo" /><strong
+            >ISIE NITP SRA</strong
+          ></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarsExample01"
+        >
+          <span class="navbar-toggler-icon"> </span>
+        </button>
 
-        <div class="container">
-            <div class="information">
-                <div class="eventimage">
-                    <img src="images/car2.jpg" alt="">
-                </div>
-                <p class="dateOfEvent"> 21 Jan -2 Feb </p>
-                <h2> CORONA & MELANGE </h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A rerum corrupti aliquam vel, dolor hic, assumenda, molestias cupiditate eligendi natus minima exercitationem in possimus nesciunt repellat rem? Neque, recusandae inventore!</p>
-                <p id="appearslater2" style="visibility: hidden; display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. A rerum corrupti aliquam vel, dolor hic, assumenda, molestias cupiditate eligendi natus minima exercitationem in possimus nesciunt repellat rem? Neque, recusandae inventore!</p>
-                <div class="button" onclick="openclose2()"><a href="#appearslater2"> Real Full Article </a></div>
-            </div>
+        <div
+          class="collapse navbar-collapse navbar-custom"
+          id="navbarsExample01"
+        >
+          <ul
+            class="navbar-nav me-auto mb-2"
+            style="align-items: center !important; text-align: center"
+          >
+            <li class="nav-item active">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="pastevents.html">Events</a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#achievements">Achievements</a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="team.html">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Support page.html">Support Us</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact us</a>
+            </li> -->
+          </ul>
         </div>
+      </div>
+    </nav>
+    <section class="Events">
+      <h1
+        style="
+          text-align: center;
+          position: relative;
+          top: 50px;
+          font-size: 500%;
+          font-weight: 800;
+        "
+      >
+        PAST EVENTS
+      </h1>
+      <!-- First Event -->
+      <div class="container">
+        <div class="information">
+          <div class="eventimage">
+            <img src="images/2020 2.jpg" alt="event pic" />
+          </div>
+          <p class="dateOfEvent">19 Oct- 20 Oct, 2019</p>
+          <h2>Workshop on Electric Solar Vehicle</h2>
+          <p>
+            This 2 day workshop on Electric Solar Vehicle was conducted for
+            students of branches ME/CE/ECE.Trainers were from a renowned
+            industry. The students were made familiar with the advantages of
+            using solar energy as a mobility solution.
+          </p>
+          <p id="appearslater1" style="visibility: hidden; display: none">
+            The trainee gave the students information about the EV market and
+            the oppertunities upcoming for the students in this field.Then there
+            was a designing session for students practically on our previous
+            ESVC cars. Students were asked to design their own vehicle and later
+            on were told the pros and cons of the design they made.<br />
+            This event proved to be very beneficial for the students and
+            recieved a lot of participation and appreciation.
+          </p>
+          <div class="button" onclick="openclose1()">
+            <a href="#appearslater1"> Read Full Article </a>
+          </div>
+        </div>
+      </div>
+      <!-- SECOND EVENT -->
+
+      <div class="container">
+        <div class="information">
+          <div class="eventimage">
+            <img src="images/2019 8.jpeg" alt="event pic" />
+          </div>
+          <p class="dateOfEvent">8th November,2019</p>
+          <h2>Eximus 1.O</h2>
+          <p>
+            Eximus 1.O conducted for all branches was an exciting trivia quiz
+            consisting of two rounds. Round 1 was a Pen paper round based on
+            general aptitude, general knowledge and verbal reasoning.
+          </p>
+          <p id="appearslater2" style="visibility: hidden; display: none">
+            Round 2 was a mega quiz round and the result was declared after this
+            round. This event was great fun and witnessed huge participation.
+          </p>
+          <div class="button" onclick="openclose2()">
+            <a href="#appearslater2"> Read Full Article </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- THIRD EVENT -->
+      <div class="container">
+        <div class="information">
+          <div class="eventimage">
+            <img src="images/2020 8.jpeg" alt="event pic" />
+          </div>
+          <p class="dateOfEvent">27th December 2020</p>
+          <h2>Orientation Session 2020</h2>
+          <p>
+            The orientation session was held in online mode to introduce the
+            club to the newly admitted students in the year 2020. The session
+            was held with a motive to help the students know about the club and
+            its events and also about the benefit of being in a technical club
+            as this.
+          </p>
+          <p id="appearslater3" style="visibility: hidden; display: none">
+            Students were first briefed about the club and its foundation. Then,
+            they were introduced with the various competitions held by ISIE
+            INDIA in which the teams formed after inductions will
+            participate.<br />
+            Then the few of our alumni shared their experience about being in
+            the club and how it helped them get practical implementation
+            knowledge.In the end there was a QnA session with the students.
+          </p>
+          <div class="button" onclick="openclose3()">
+            <a href="#appearslater3"> Read Full Article </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fourth Event -->
+      <div class="container">
+        <div class="information">
+          <div class="eventimage">
+            <img src="images/2019 7.jpg" alt="event pic" />
+          </div>
+          <p class="dateOfEvent">9th september, 2019</p>
+          <h2>Sam-O-Tech 3.O</h2>
+          <p>Team Recruitment program for ESVC.</p>
+        </div>
+      </div>
+      <!-- FIFTH EVENT -->
+      <div class="container">
+        <div class="information">
+          <div class="eventimage">
+            <img src="images/industrial visit.PNG" alt="event pic" />
+          </div>
+          <p class="dateOfEvent">16th february, 2019</p>
+          <h2>INDUSTRIAL VISIT TO TRTC, PATNA</h2>
+          <!-- <p>Team Recruitment program for ESVC.</p> -->
+        </div>
+      </div>
+    </section>
+    <section class="footer">
+      <p class="text" style="color: grey; font-size: 13px">
+        D&D by<br />
+        Devansh Jain,<br />Palak Kumari,<br />
+        Mohini Prakash
+      </p>
+      <p class="text">Copyright © ISIE NIT Patna &copy; 2018</p>
+
+      <ul>
+        <p class="text">Follow Us On:</p>
+        <li>
+          <a href="https://m.facebook.com/Isienitpsra/"
+            ><img src="images/facebook.png"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/isienitpsra/"
+            ><span style="font-size: 2em; color: aliceblue"
+              ><i class="fab fa-instagram"></i
+            ></span>
+            <!--<img src="images/twitter.png" />--></a
+          >
+        </li>
+        <li>
+          <a href="#"><img src="images/linkedin.png" /></a>
+        </li>
+      </ul>
     </section>
     <script>
-        var a,b;
-        function openclose1(){
-            if(a==1){
-                document.getElementById("appearslater1").style.visibility="invisible";
-                document.getElementById("appearslater1").style.display="none";
-                return a=0;
-            }
-            else{
-                document.getElementById("appearslater1").style.visibility="visible";
-                document.getElementById("appearslater1").style.display="block";
-                return a=1;
-            }
+      var a, b;
+      function openclose1() {
+        if (a == 1) {
+          document.getElementById("appearslater1").style.visibility =
+            "invisible";
+          document.getElementById("appearslater1").style.display = "none";
+          return (a = 0);
+        } else {
+          document.getElementById("appearslater1").style.visibility = "visible";
+          document.getElementById("appearslater1").style.display = "block";
+          return (a = 1);
         }
-        function openclose2(){
-            if(b==1){
-                document.getElementById("appearslater2").style.visibility="invisible";
-                document.getElementById("appearslater2").style.display="none";
-                return b=0;
-            }
-            else{
-                document.getElementById("appearslater2").style.visibility="visible";
-                document.getElementById("appearslater2").style.display="block";
-                return b=1;
-            }
+      }
+      function openclose2() {
+        if (b == 1) {
+          document.getElementById("appearslater2").style.visibility =
+            "invisible";
+          document.getElementById("appearslater2").style.display = "none";
+          return (b = 0);
+        } else {
+          document.getElementById("appearslater2").style.visibility = "visible";
+          document.getElementById("appearslater2").style.display = "block";
+          return (b = 1);
         }
+      }
+
+      function openclose3() {
+        if (b == 1) {
+          document.getElementById("appearslater3").style.visibility =
+            "invisible";
+          document.getElementById("appearslater3").style.display = "none";
+          return (b = 0);
+        } else {
+          document.getElementById("appearslater3").style.visibility = "visible";
+          document.getElementById("appearslater3").style.display = "block";
+          return (b = 1);
+        }
+      }
     </script>
-</body>
+  </body>
 </html>
