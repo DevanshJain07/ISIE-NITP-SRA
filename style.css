@@ -53,6 +53,9 @@ html {
 .navbar ul li a {
   margin-left: 10px;
 }
+.navbar-custom ul {
+  margin-left: 400px;
+}
 .logo {
   width: 70px;
   height: 70px;
@@ -234,6 +237,9 @@ html {
 }
 
 @media (max-width: 991px) {
+  .navbar-custom ul {
+    margin-left: 150px;
+  }
   .footer {
     padding: 20px 50px;
     flex-direction: column-reverse;
