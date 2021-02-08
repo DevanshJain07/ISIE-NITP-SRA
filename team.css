@@ -22,6 +22,9 @@ html {
   color: rgb(240, 234, 234);
   /* background: linear-gradient(to right, #000033, #1a1a1a); */
 }
+.navbar-custom ul {
+  margin-left: 900px;
+}
 .teamcards {
   position: relative;
   display: flex;
@@ -169,6 +172,9 @@ html {
   letter-spacing: 1px;
 }
 @media (max-width: 991px) {
+  .navbar-custom ul {
+    margin-left: 150px;
+  }
   .footer {
     padding: 20px 50px;
     flex-direction: column-reverse;
