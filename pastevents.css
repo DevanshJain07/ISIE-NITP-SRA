@@ -1,21 +1,26 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 html {
   font-size: 62.4%;
 }
-body {
-  font-size: 10px;
-  font-weight: 700;
-  font-family: lato, Arial, Helvetica, sans-serif;
-  text-rendering: optimizeLegibility;
+body,
+html {
+  margin: 0;
+  font-weight: 400;
+  line-height: 1.7;
+  color: rgb(240, 234, 234);
+  justify-content: center;
 }
 
-/* NAVBAR */
+
 .navbar .active a {
-  font-size: 16px;
+  font-size: large;
   font-weight: 500;
   color: rgb(245, 245, 245) !important;
 }
@@ -26,9 +31,6 @@ body {
 .navbar ul li a {
   margin-left: 10px;
   font-size: 16px;
-}
-.navbar-custom ul {
-  margin-left: 800px;
 }
 .logo {
   width: 70px;
@@ -149,7 +151,7 @@ body {
     width: 100%;
   }
   .Events .information .dateOfEvent {
-    top: 24.4rem;
+    top: 20.4rem;
   }
   .Events .popup__box {
     width: 50rem;
@@ -163,7 +165,7 @@ body {
     width: 96%;
   }
   .Events .information .dateOfEvent {
-    top: 24.4rem;
+    top: 20.4rem;
     right: 2.2rem;
   }
 }
