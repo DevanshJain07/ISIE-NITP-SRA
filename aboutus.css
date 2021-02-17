@@ -159,6 +159,10 @@
 }
 
 @media (max-width: 991px) {
+  .logo {
+    margin-left: 0px;
+    text-align: left;
+  }
   .navbar-custom ul {
     margin-left: 150px;
   }

@@ -9,6 +9,31 @@ body {
   color: #000;
 }
 
+.navbar .active a {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(245, 245, 245) !important;
+}
+.navbar ul li a:hover {
+  font-weight: 600;
+  color: rgb(207, 197, 46) !important;
+}
+.navbar ul li a {
+  margin-left: 10px;
+  font-size: 16px;
+}
+.navbar-custom ul {
+  margin-left: 800px;
+}
+.logo {
+  width: 70px;
+  height: 70px;
+  border: none;
+  border-radius: 50%;
+}
+.topsection {
+  margin-top: 88px;
+}
 .topsection .main {
   max-width: 110rem;
   margin: 0 auto;
@@ -244,6 +269,7 @@ body {
   color: whitesmoke;
   font-size: 16px;
 }
+
 .footer ul {
   display: flex;
   justify-content: center;
@@ -262,6 +288,9 @@ body {
 }
 
 @media (max-width: 991px) {
+  .navbar-custom ul {
+    margin-left: 150px;
+  }
   .footer {
     padding: 20px 50px;
     flex-direction: column-reverse;
