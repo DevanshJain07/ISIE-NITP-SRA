@@ -7,23 +7,24 @@ html {
 body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: #000;
+  background-color: #282e34 !important;
 }
 
 .navbar .active a {
-  font-size: 16px;
+  font-size: large;
   font-weight: 500;
   color: rgb(245, 245, 245) !important;
+}
+.navbar a{
+  font-size: large;
+  font-weight: 500;
 }
 .navbar ul li a:hover {
   font-weight: 600;
   color: rgb(207, 197, 46) !important;
 }
 .navbar ul li a {
-  margin-left: 10px;
-  font-size: 16px;
-}
-.navbar-custom ul {
-  margin-left: 800px;
+  margin-left: 12px;
 }
 .logo {
   width: 70px;
@@ -125,7 +126,7 @@ body {
   font-size: 100px;
   padding: 1px;
   margin: 10px;
-  color: rgb(0, 0, 0);
+  color: rgb(237, 241, 201);
   text-overflow: ellipsis;
   overflow: hidden;
   -webkit-transform: translateY(-30%);
@@ -140,9 +141,11 @@ body {
 .topsection .content a {
   display: inline-block;
   font-size: 3rem;
-  text-transform: lowercase;
+  text-transform: uppercase;
   padding: 1.5rem;
+  color:rgb(243, 255, 132);
   opacity: 0;
+  font-weight: 700;
   -webkit-transform: translateY(-100%);
   transform: translateY(-100%);
   -webkit-transition: opacity 0.5s 0.1s, -webkit-transform 0.5s 0.1s;
@@ -152,7 +155,10 @@ body {
     -webkit-transform 0.5s 0.1s;
   will-change: transform, opacity;
 }
-
+.topsection .content a p:hover{
+  background-color: #f4f5ea;
+  transition-duration: 0.5s;
+}
 .topsection li.current {
   visibility: visible;
   -webkit-transition-delay: 0s;
@@ -183,13 +189,14 @@ body {
   position: absolute;
   bottom: 0;
   right: 0;
-  background: #fff;
+  color: rgb(238, 238, 238);
   z-index: 2;
 }
 .topsection .prev,
 .topsection .next,
 .topsection .counter {
   vertical-align: middle;
+  color: white;
 }
 .topsection .prev,
 .topsection .next {
@@ -212,7 +219,7 @@ body {
   transform: translateY(-50%);
   border: 0.8rem solid transparent;
   border-right-width: 1rem;
-  border-right-color: #000;
+  border-right-color: white;
   border-left-width: 0;
   width: 0;
   height: 0;
@@ -225,7 +232,7 @@ body {
   -webkit-transform: translateY(-50%) translateZ(0);
   transform: translateY(-50%) translateZ(0);
   left: 0.5rem;
-  background: #000;
+  background: white;
   height: 0.1rem;
   min-height: 1px;
   width: 2.5rem;
@@ -236,7 +243,7 @@ body {
   right: 0;
   left: auto;
   border-left-width: 1rem;
-  border-left-color: #000;
+  border-left-color: white;
   border-right-width: 0;
 }
 .topsection .next::after {
