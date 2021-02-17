@@ -20,27 +20,6 @@ html {
   justify-content: center;
 }
 
-/* .navbar {
-  background: transparent !important;
-  border: none;
-  top: 0;
-  width: 100%;
-}
-
-.navbar .navbar-brand {
-  color: #000000;
-}
-
-.navbar ul li a {
-  font-weight: 100;
-  color: rgb(192, 192, 192) !important;
-}
-
-.navbar .active a {
-  font-size: large;
-  font-weight: 500;
-  color: rgb(192, 192, 192) !important;
-} */
 .navbar .active a {
   font-size: large;
   font-weight: 500;
@@ -52,9 +31,6 @@ html {
 }
 .navbar ul li a {
   margin-left: 10px;
-}
-.navbar-custom ul {
-  margin-left: 400px;
 }
 .logo {
   width: 70px;
@@ -159,7 +135,11 @@ html {
   letter-spacing: 7px;
   color: #fff;
 }
-
+.border.trans:hover{
+  background-color: rgb(179, 179, 179);
+  opacity: 1;
+  transition-duration: 0.4s;
+}
 .prtextimage {
   position: absolute;
   top: 10%;
