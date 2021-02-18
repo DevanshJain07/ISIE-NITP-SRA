@@ -118,6 +118,11 @@
   padding: 2rem;
   text-align: left;
 }
+@media (max-width: 576px) {
+  .answer p{
+    font-size: 0.7rem;
+  }
+}
 
 .accordion-item:target .answer {
   max-height: 15rem;
